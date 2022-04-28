@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width">  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            
+        <title>My To-do List</title>
+        <meta name="description" content="Help managing daily activities. Be organized.">
+        <link rel="stylesheet" href="css/schedule.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.min.css">
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <link rel="stylesheet" type="text/css" href="css/timer.css">
+            <link rel="stylesheet" href="css/owl.carousel.min.css">
+            <script src="js/jquery.min.js"></script>
+            <script src="js/owl.carousel.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.4.0/main.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.4.0/main.min.js"></script>
+        <script src="js/todo.js" defer></script>
+        <script src="js/timer.js" defer></script>
+        
+
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <div class="container">
+            <div class="app">
+                <div class="menushape1"></div>
+                <div class="menushape2"></div>
+                <ul class="menubar">
+                    <li><a class="active"  href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"></i></a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#"><i class="fas fa-ellipsis-v"></i></a></li>
+                </ul>
+
+                <div class="sidenav" id="sidenav">
+                    <div class="sidenavshape"></div>
+                    <div class="profile">
+                        <img src="img/avtar.png" alt="avtar">
+                        <h3>Jerome</h3>
+                        <p>Blogger</h3>
+                    </div>
+                    <div class="clearfix"></div>
+                    <ul>
+                        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a></li>
+                        <li class="active"><a href="index.html">Profile</a></li>
+                        <li><a href="notyet.html">About</a></li>
+                        <li><a href="notyet.html">Blogs</a></li>
+                        <li><a href="notyet.html">Contact</a></li>
+                        <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                    </ul> 
+                </div>
+                <!-- Home page starts here -->
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="news" id="upcoming">
+                            <h2><span>json search</span></h2>		          	
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" name="search" placeholder="Search..">
+                        </div>
+                    </div>		 
+                </div>
+        </div> <!-- app close -->
+        </div> <!-- container close -->
+    </body>
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "300px";
+        }
+        
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+        }
+        $(document).ready(function() {
+                      $('.owl-carousel').owlCarousel({
+                        items: 6,
+                        loop: true,
+                        margin: 10,
+                        merge: true,
+                        responsive: {
+                          678: {
+                            mergeFit: true
+                          },
+                          1000: {
+                            mergeFit: false
+                          }
+                        }
+                      });
+                    })
+        
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+</html>

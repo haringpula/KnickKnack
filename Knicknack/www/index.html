@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width">  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+  <title>My To-do List</title>
+  <meta name="description" content="Help managing daily activities. Be organized.">
+  <link rel="stylesheet" href="css/schedule.css">
+  
+   <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/timer.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <script src="js/popup.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.4.0/main.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.4.0/main.min.js"></script>
+  <script src="js/todo.js" defer></script>
+  <script src="js/timer.js" defer></script>
+
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<div class="container">
+
+		<div class="app">
+			<div class="menushape1"></div>
+			<div class="menushape2"></div>
+			<ul class="menubar">
+				<li><a class="active"  href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"></i></a></li>
+				<li><a href="#"><i class="fas fa-home"></i></a></li>
+				<li><a href="search.html"><i class="fas fa-ellipsis-v"></i></a></li>
+			</ul>
+
+			<div class="sidenav" id="sidenav">
+				<div class="sidenavshape"></div>
+				<div class="profile">
+					<img src="img/avtar.png" alt="avtar">
+					<h3>Jerome</h3>
+					<p>Blogger</h3>
+				</div>
+				<div class="clearfix"></div>
+				<ul>
+					<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a></li>
+					<li class="active"><a href="">Profile</a></li>
+					<li><a href="notyet.html" id="About">About</a></li>
+					<li><a href="notyet.html" >Blogs</a></li>
+					<li><a href="notyet.html" id="Contact">Contact</a></li>
+					<li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+				</ul> 
+			</div>
+			<!-- Home page starts here -->
+
+			<div class="row">
+		        <div class="col-12">
+		          <div class="owl-carousel">
+		            <div class="item" data-merge="5">
+		              <img src="img/start.jpg" alt="">
+		              <h4 style="font-weight: bold;">Start your Schedule</h4>
+		            </div>
+		            <div class="item" data-merge="3">
+		            	<a href="#create">
+		              <img src="img/todo.png" alt="">
+		              <h4>Create your To-Do List</h4></a>
+		            </div>
+		            <div class="item" data-merge="3">
+		            	<a href="#calendar">
+		              <img src="img/calendar.jpg" alt="">
+		              <h4>Calendar Schedule</h4></a>
+		            </div>
+		            <div class="item" data-merge="3"><a href="#clock">
+		              <img src="img/alarm.jpg" alt="">
+		              <h4>Get alarmed </h4></a>
+		              </div>
+		            <div class="item" data-merge="4">
+		            	<a href="#detailed">
+		              <img src="img/detailed.jpg" alt="">
+		              <h4>Detailed Schedule</h4></a>
+		            </div>
+		            <div class="item" data-merge="3">
+		            	<a href="#upcoming">
+		              <img src="img/review.jpg" alt="">
+		              <h4>Review your Schedule</h4></a>
+		            </div>
+
+		          </div>
+		          <div class="news" id="upcoming">
+		          	<h2><span>Upcoming Activities</span></h2>		          	
+		          	<div class="row news-item">
+		          		<img src="img/base1.png" alt="">
+		          		<div class="news-desc">
+		          			<h4>Current Month</h4>
+		          			<p>KnickKnacks should appear here</p>
+		          		</div>
+		          		<div class="social">
+		          			<a href="" class="text-success"><i class="fas fa-thumbs-up"></i></a>
+		          			<br>
+		          			<a href="" class="text-info"><i class="fas fa-share"></i></a>
+		          			<br>
+		          			<a href="" class="text-secondary"><i class="fas fa-comment"></i></a>
+		          		</div>
+		          	</div>
+		          	<div class="row news-item">
+		          		<img src="img/base2.png" alt="">
+		          		<div class="news-desc">
+		          			<h4>Next Month</h4>
+		          			<p>KnickKnacks should appear here</p>
+		          		</div>
+		          		<div class="social">
+		          			
+		          			<a href="" class="text-success"><i class="fas fa-thumbs-up"></i></a>
+		          			<br>
+		          			<a href="" class="text-info"><i class="fas fa-share"></i></a>
+		          			<br>
+		          			<a href="" class="text-secondary"><i class="fas fa-comment"></i></a>
+		          		</div>
+		          	</div>
+		          	<div class="row news-item">
+		          		<img src="img/base3.png" alt="">
+		          		<div class="news-desc">
+		          			<h4>Near Future</h4>
+		          			<p>KnickKnacks should appear here</p>
+		          		</div>
+		          		<div class="social">
+		          			
+		          			<a href="" class="text-success"><i class="fas fa-thumbs-up"></i></a>
+		          			<br>
+		          			<a href="" class="text-info"><i class="fas fa-share"></i></a>
+		          			<br>
+		          			<a href="" class="text-secondary"><i class="fas fa-comment"></i></a>
+		          		</div>
+		          	</div>
+		          	<div>
+		          		<img src="" alt="" class="col-2">
+		          		<div class="col-10">
+		          			<h4></h4>
+		          			<p></p>
+		          		</div>
+		          	</div>
+		          	<div>
+		          		<img src="" alt="" class="col-2">
+		          		<div class="col-10">
+		          			<h4></h4>
+		          			<p></p>
+		          		</div>
+		          	</div>
+		          
+  <div class="todo-grid-parent">
+
+    <div id="create"><h2><span>To-Do List</span></h2>
+      <div class="todo-input todo-block" >
+
+        <span>To-do: </span>
+        <input type="text" placeholder="Enter new to-do">
+        <span>Category: </span>
+        <input type="text" placeholder="Enter category" list="categoryList">
+        <datalist id="categoryList">
+          <option value="Personal"></option>
+          <option value="Work"></option>
+        </datalist>
+        <span>Date:</span>
+        <input type="date" id="dateInput">
+        <span>Time:</span>
+        <input type="time" id="timeInput">
+        <span></span>
+        <button id="addBtn">Add</button>
+        <span></span>
+        <button id="sortBtn">Sort by Date</button>
+        <span></span>
+        <label><input type="checkbox" id="shortlistBtn"> Incomplete First </label>
+      </div>
+       <div  style= "align-content: center;
+            text-align: center;">
+  <section >
+        <div class="time-display">
+            <img  class="timer" src="img/clock.png">
+            <div style= "align-content: center;
+            text-align: center;" id="clock"></div>
+        </div>
+        <form style= "align-content: center;
+            text-align: center;" class="setAlarm">
+        <label class="alarm-heading"><h2>Set Alarm(24-Hour Clock)</h2></label><br>
+        <div class="set-alarm-field">
+            <input type="number" name="a_hour" id="a_hour" placeholder="HH" max="23" min="00">
+            <input type="number" name="a_min" id="a_min" placeholder="MM" max="59" min="00">
+            <input type="number" name="a_sec" id="a_sec" placeholder="SS" max="59" min="00">
+        </div>
+            <div class="controls">
+                <button type="submit" class="set-alarm">Set Alarm</button>
+                <button type="reset" onclick="clearAlarm()" class="clear-alarm">Stop Alarm</button>
+            </div>
+        </form> 
+</section>
+    <hr style="margin-top: 10px">
+<section>
+
+        <div style= "align-content: center;
+            text-align: center;">
+            <h2 class="alarm-heading" style="margin-top: -20px;">Upcoming Alarms</h2>
+        </div>
+        <div style= "align-content: center;
+            text-align: center;">
+            <ul style= "align-content: center;
+            text-align: center;" id = "myList1">
+                
+            </ul>
+        </div>
+  </section>
+</div>
+
+    <div id="detailed"><h2><span>My List</span></h2>
+      <div class="todo-block todoTable-block" >
+        <div class="itemsPerPage">
+          <span>items per page</span>
+          <select id="itemsPerPageSelectElem">
+            <option>5</option>
+            <option>10</option>
+            <option>20</option>
+          </select>
+        </div>
+
+        <table id="todoTable">
+          <tr>
+            <td></td>
+            <td>Date</td>
+            <td>Time</td>
+            <td>Task</td>
+            <td>
+              <select id="categoryFilter">
+              </select>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+
+        <div class="pagination-pages">
+          
+        </div>
+      </div>
+    </div>
+</div>
+<h2><span>Calendar Schedule</span></h2>
+    <div class="todo-calendar  todo-block">
+      <div id='calendar'></div>
+    </div>
+
+  </div> <!-- class="todo-grid-parent" -->
+
+  <div class="todo-overlay" id="todo-overlay">
+    <div class="todo-modal" id="todo-modal">
+      <div class="todo-input todo-block">
+        <span>To-do: </span>
+        <input type="text" placeholder="Enter new to-do" id="todo-edit-todo">
+        <span>Category: </span>
+        <input type="text" placeholder="Enter category" list="categoryList" id="todo-edit-category">
+        <datalist id="categoryList">
+          <option value="Personal"></option>
+          <option value="Work"></option>
+        </datalist>
+        <span>Date:</span>
+        <input type="date" id="todo-edit-date">
+        <span>Time:</span>
+        <input type="time" id="todo-edit-time">
+        <span></span>
+        <button id="changeBtn">Save Change</button>
+      </div>
+    </div>
+    <div class="todo-modal-close-btn" id="todo-modal-close-btn">X</div>
+  </div>
+</div>
+
+				</div>		 
+			</div>
+	</div> <!-- app close -->
+	</div> <!-- container close -->
+    
+
+   
+<script>
+function openNav() {
+    document.getElementById("sidenav").style.width = "300px";
+}
+
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+}
+$(document).ready(function() {
+              $('.owl-carousel').owlCarousel({
+                items: 6,
+                loop: true,
+                margin: 10,
+                merge: true,
+                responsive: {
+                  678: {
+                    mergeFit: true
+                  },
+                  1000: {
+                    mergeFit: false
+                  }
+                }
+              });
+            })
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+     
+</body>
+</html>

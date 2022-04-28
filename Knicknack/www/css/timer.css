@@ -1,0 +1,126 @@
+
+section{
+    align-content: center;
+    text-align: center;
+}
+.time-display{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: white;
+    width: 230px;
+    height: 10%;
+    border-radius: 4px;
+    align-content: center;
+    text-align: center;
+    margin-left: 25%;
+}
+
+
+.timer{  align-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 50px;
+
+}
+
+#clock{
+     display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    align-content: center;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+.alarm-heading{
+    color: whitesmoke;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.set-alarm-field{
+    margin-top: -20px;
+    height: 40px;
+    /* background-color: yellowgreen; */
+    padding-top: 0px;
+    align-content: center;
+            text-align: center;
+}
+
+.controls button{
+    background-color: rgba(244, 214, 65, 0.7);
+   border:1px solid rgba(244, 214, 65, 1);
+    color: #565454;
+    width: 105px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight:500;
+}
+
+.controls button:hover{
+    box-shadow: 4px 4px #d1a740;
+  color: #fff;
+}
+
+#myList1{
+    
+    align-content: center;
+    text-align: center;
+    
+}
+
+#myList1 li{
+    font-size: 1 rem;
+    color:#565454;
+    background-color:  rgba(244, 214, 65, 0.7);
+    height: 2.8rem;
+    border-radius: 4px;
+    padding-top: 10px;
+    width: 280px;
+    margin-bottom: 10px;
+align-content: center;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.time-list{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    align-content: center;
+            text-align: center;
+}
+
+@media all and (max-height: 500px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.time-list span{
+    /* background-color: violet; */
+    width: 160px;
+    margin-right: 18px;
+    align-content: center;
+    text-align: center;
+    align-content: center;
+            text-align: center;
+    
+}
+
+
+.time-list button{
+      border:1px solid rgba(244, 214, 65, 1);
+  background: rgba(244, 214, 65, 0.7);
+    border-radius: 3px;
+    border-width: 0px;
+    height: 26px;
+        color: #565454;
+}
+
+
+
